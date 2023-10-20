@@ -32,14 +32,3 @@
   background-color: black;
 }
 
-.custom-popover {
-  bs-popover-max-width: 200px;
-  bs-popover-border-color: var(bd-violet-bg);
-  bs-popover-header-bg: var(bd-violet-bg);
-  bs-popover-header-color: var(--bs-white);
-  bs-popover-body-padding-x: 1rem;
-  bs-popover-body-padding-y: .5rem;
-}
-
-const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
