@@ -1,0 +1,45 @@
+@import "../node_modules/bootstrap/scss/functions";
+.gradient-background{
+  background: linear-gradient(300deg,#008000,#ffffff,	#FF4500);
+  background-size: 180% 180%;
+  animation: gradient-animation 7s ease infinite;
+}
+@keyframes gradient-animation{
+ 0%{
+   background-position: 0% 50%;
+ }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+
+.heightop{
+  height: 400px
+}
+.centerop{
+  display: flex;
+  justify-content: center;
+}
+
+.h2footer{
+  color:white;
+}
+
+.footerop{
+  background-color: black;
+}
+
+.custom-popover {
+  bs-popover-max-width: 200px;
+  bs-popover-border-color: var(bd-violet-bg);
+  bs-popover-header-bg: var(bd-violet-bg);
+  bs-popover-header-color: var(--bs-white);
+  bs-popover-body-padding-x: 1rem;
+  bs-popover-body-padding-y: .5rem;
+}
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl));
