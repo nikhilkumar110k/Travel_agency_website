@@ -270,5 +270,25 @@
   </footer>
   
 <script src="script.js" rel="stylesheet"></script>
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-analytics.js";
+  const firebaseConfig = {
+    apiKey: "AIzaSyCZj_gvmJFRQLYZQ8nzW0dxjxyMYrSv3qY",
+    authDomain: "travel-website-application.firebaseapp.com",
+    projectId: "travel-website-application",
+    storageBucket: "travel-website-application.appspot.com",
+    messagingSenderId: "315429175131",
+    appId: "1:315429175131:web:d4ca860c17a838cbdb647e",
+    measurementId: "G-ZQQS9JJVLS"
+  };
+
+  
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+  </script>
+
+
+  
 </body>
 </html>
